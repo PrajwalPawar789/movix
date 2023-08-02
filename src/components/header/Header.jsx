@@ -7,7 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "../../assets/movix-logo.svg";
+import logo from "../../assets/AD.jpg";
 
 const Header = () => {
     const [show, setShow] = useState("top");
@@ -81,13 +81,31 @@ const Header = () => {
                         className="menuItem"
                         onClick={() => navigationHandler("movie")}
                     >
-                        Movies
+                        Home
                     </li>
                     <li
                         className="menuItem"
                         onClick={() => navigationHandler("tv")}
                     >
-                        TV Shows
+                        Magazine
+                    </li>
+                    <li
+                        className="menuItem"
+                        onClick={() => navigationHandler("tv")}
+                    >
+                        Leadership
+                    </li>
+                    <li
+                        className="menuItem"
+                        onClick={() => navigationHandler("tv")}
+                    >
+                        About
+                    </li>
+                    <li
+                        className="menuItem"
+                        onClick={() => navigationHandler("tv")}
+                    >
+                        Contact
                     </li>
                     <li className="menuItem">
                         <HiOutlineSearch onClick={openSearch} />
@@ -109,7 +127,7 @@ const Header = () => {
                         <div className="searchInput">
                             <input
                                 type="text"
-                                placeholder="Search for a movie or tv show...."
+                                placeholder="Search for a Magazine or ...."
                                 onChange={(e) => setQuery(e.target.value)}
                                 onKeyUp={searchQueryHandler}
                             />
